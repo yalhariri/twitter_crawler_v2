@@ -7,7 +7,19 @@ You need to create a yaml file with the following path and name:
 
 or you can set a file name but you need to add the parameter -c filename when running the code.
 
-### This file should contain the basic information including:
+## API access and scope
+
+This tool calls the Twitter/X API v2 and needs a `BEARER_TOKEN` in the config
+file; it does not include one. The access it requires is not free: the Academic
+Research tier that made large historical collections practical was withdrawn in
+2023, and the endpoints used here - full-archive search and the filtered stream
+- sit on paid tiers whose rate limits and prices X sets and revises. Check the
+current developer documentation before planning a collection.
+
+The code was written for a specific research project and is published as a
+record of how that collection was done, rather than as a maintained product.
+
+## This file should contain the basic information including:
 
 
   1- BEARER_TOKEN the Twitter API bearer token.
